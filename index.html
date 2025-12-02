@@ -1347,6 +1347,7 @@
               <h3>Get In Touch</h3>
               <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
 
+              <!--
               <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
 
@@ -1376,6 +1377,66 @@
 
                 </div>
               </form>
+            -->
+            <form id="contactForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <!-- Name -->
+                <div class="col-md-6">
+                 <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                </div>
+
+                <!-- Surname -->
+                <div class="col-md-6">
+                 <input type="text" id="surname" name="surname" class="form-control" placeholder="Surname" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                 <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone number" required>
+                </div>
+
+                <!-- Address -->
+                <div class="col-12">
+                  <input type="text" id="address" name="address" class="form-control" placeholder="Address" required>
+                </div>
+
+                <!-- Rating 1 -->
+                <div class="col-12">
+                  <label for="rating1">Good in group work (1–10)</label>
+                  <input type="range" id="rating1" name="rating1" min="1" max="10" value="5" class="form-range">
+                  <span id="rating1Value">5</span>
+                </div>
+
+                <!-- Rating 2 -->
+                <div class="col-12">
+                  <label for="rating2">Good in multitasking (1–10)</label>
+                  <input type="range" id="rating2" name="rating2" min="1" max="10" value="5" class="form-range">
+                  <span id="rating2Value">5</span>
+                </div>
+
+                 <!-- Rating 3 -->
+                <div class="col-12">
+                  <label for="rating3">Good in communacation (1–10)</label>
+                    <input type="range" id="rating3" name="rating3" min="1" max="10" value="5" class="form-range">
+                    <span id="rating3Value">5</span>
+                  </div>
+
+                <!-- Submit -->
+                <div class="col-12 text-center">
+                  <button type="submit" id="submitBtn" class="btn">Submit</button>
+                </div>
+
+              </div>
+            </form>
+
+            <!-- Where results will appear -->
+            <div id="formResults" style="margin-top:20px;"></div>
 
             </div>
           </div>
@@ -1428,6 +1489,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
